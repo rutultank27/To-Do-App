@@ -8,3 +8,4 @@ I have created to-do app using React. In this projet I have used tailwind css fr
 - User can add task in to-do list.
 - User can delete the task.
 - User will get error message while he/she is trying to enter the same task again.
+- User will get error message if he/she is clicking on Add Task button without entering task.
