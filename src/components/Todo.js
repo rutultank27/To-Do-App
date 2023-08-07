@@ -9,7 +9,7 @@ const Todo = () => {
     const [isTaskAdded, setIsTaskAdded] = useState(true);
 
     const updateTaskListHandler = addedTask => {
-        const taskTitle = addedTask.title;
+        const taskTitle = addedTask.title.trim();
         if(taskTitle.length !== 0) {
             setIsTaskAdded(true);
             let isTaskDuplicate = addedTaskList.some(task => task.title === taskTitle);
@@ -25,6 +25,7 @@ const Todo = () => {
             }
         } else {
             setIsTaskAdded(false);
+            setIsTaskPresent(false);
         }
     };
 
